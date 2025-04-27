@@ -1,0 +1,119 @@
+Load testing
+
+For,
+Number of Threads (users): 1 
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_LoadTestT1.jmx -l report\Opencart_LoadTestT1.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_LoadTestT1.jmx -l report\Opencart_LoadTestT1.jtl
+
+For html file
+jmeter -g report\Opencart_LoadTestT1.jtl -o report\Opencart_LoadTestT1.html
+
+
+--------------------------------------------------
+
+For,
+Number of Threads (users): 2 
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_LoadTestT2.jmx -l report\Opencart_LoadTestT2.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_LoadTestT2.jmx -l report\Opencart_LoadTestT2.jtl
+
+For html file
+jmeter -g report\Opencart_LoadTestT2.jtl -o report\Opencart_LoadTestT2.html
+
+--------------------------------------------------
+
+For,
+Number of Threads (users): 3 
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_LoadTestT3.jmx -l report\Opencart_LoadTestT3.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_LoadTestT3.jmx -l report\Opencart_LoadTestT3.jtl
+
+For html file
+jmeter -g report\Opencart_LoadTestT3.jtl -o report\Opencart_LoadTestT3.html
+
+--------------------------------------------------
+Stress testing
+For,
+Number of Threads (users): 6 
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_LoadTestT6.jmx -l report\Opencart_LoadTestT6.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_LoadTestT6.jmx -l report\Opencart_LoadTestT6.jtl
+
+For html file
+jmeter -g report\Opencart_LoadTestT6.jtl -o report\Opencart_LoadTestT6.html
+
+
+--------------------------------------------------
+Spike testing
+For,
+Number of Threads (users): 15
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_SpikeTestT10.jmx -l report\Opencart_SpikeTestT10.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_SpikeTestT10.jmx -l report\Opencart_SpikeTestT10.jtl
+
+For html file
+jmeter -g report\Opencart_SpikeTestT10.jtl -o report\Opencart_SpikeTestT10.html
+
+
+
+
+
+--------------------------------------------------
+Spike testing
+For,
+Number of Threads (users): 15
+
+Ramp-Up Period (in seconds): 10
+
+Loop Count: 1
+
+
+For CSv file:
+jmeter -n -t  test\Opencart_Endurence.jmx -l report\Opencart_Endurence.csv
+
+For jtl file:
+jmeter -n -t  test\Opencart_Endurence.jmx -l report\Opencart_Endurence.jtl
+
+For html file
+jmeter -g report\Opencart_Endurence.jtl -o report\Opencart_Endurence.html
